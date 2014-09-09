@@ -67,7 +67,7 @@ body {
 
 
 		    <? } else { ?>
-			<li><a href="https://kauth.kakao.com/oauth/authorize?client_id=190c739551be1cdacf4c41a318d2d79a&redirect_uri=http://webstory.sevens.pe.kr/oauth/oauth.php&response_type=code">로그인</a></li>
+			<li><a href="https://kauth.kakao.com/oauth/authorize?client_id=yourclientid&redirect_uri=http://yourdomain.com/oauth/oauth.php&response_type=code">로그인</a></li>
                         </ul>
                     </li>
 		<? } ?>

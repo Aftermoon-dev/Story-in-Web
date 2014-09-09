@@ -14,7 +14,7 @@
         //include_once("../oauth/index.php");
         function refreshtoken($accesstoken)
         {
-        $param2="grant_type=refresh_token&client_id=190c739551be1cdacf4c41a318d2d79a&refresh_token=$accesstoken";
+        $param2="grant_type=refresh_token&client_id=yourclientid&refresh_token=$accesstoken";
         $ch2 = curl_init('https://kauth.kakao.com/oauth/token');
         curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($ch2, CURLOPT_POSTFIELDS ,$param2);
@@ -30,7 +30,7 @@
 
         $token = $_SESSION['token'];
         //echo $_SESSION['token'];
-        $param ="grant_type=authorization_code&client_id=190c739551be1cdacf4c41a318d2d79a&redirect_uri=http://webstory.sevens.pe.kr/oauth/oauth.php&code=$token";
+        $param ="grant_type=authorization_code&client_id=yourclientid&redirect_uri=http://webstory.sevens.pe.kr/oauth/oauth.php&code=$token";
         //echo "logined";
         $param1="";
         $ch = curl_init('https://kauth.kakao.com/oauth/token');
